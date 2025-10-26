@@ -15,7 +15,7 @@
     const params = new URLSearchParams(location.search);
     const shortName = params.get("route");
     const stopId = params.get("stop");
-    const apiRoot = "http://127.0.0.1:5000";
+    const apiRoot = "https://qr-bus-lappeenranta.onrender.com";
 
     let map = L.map("map").setView([61.06, 28.1], 13);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
